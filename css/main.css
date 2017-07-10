@@ -137,6 +137,9 @@
 	.emotes.images img {
 		width: 100%
 	}
+  .main-content .col-xs-4 p {
+    font-size: 15px!important;
+  }
 }
 
 /* =================================================
