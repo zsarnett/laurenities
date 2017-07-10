@@ -238,8 +238,15 @@ input[type=text]:focus, select:focus, textarea:focus {
     border-radius: 4px;
     cursor: pointer;
 }
-.container.container-contact {
-	width: 50%;
+@media (min-width:767px) {
+	.container.container-contact {
+		width: 50%;
+	}
+}
+@media (max-width:766px) {
+	.container.container-contact {
+		width: 90%;
+	}
 }
 .container.container-contact input[type=submit]:hover {
     background-color: #c0888c;
