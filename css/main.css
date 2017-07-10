@@ -92,10 +92,13 @@
 	}
 }
 #navbar-primary li a:hover,
-#navbar-primary li a:focus,
-#navbar-primary li a.active{
+#navbar-primary li a:focus{
     background: #e7c4c7;
     color: black;
+}
+#navbar-primary li a.active {
+    color: black;
+		font-weight: 600;
 }
 .navbar-header .icon-bar {
   background-color: grey;
