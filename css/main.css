@@ -140,6 +140,9 @@
   .main-content .col-xs-4 p {
     font-size: 15px!important;
   }
+	.main-content .col-xs-4 h3 {
+    font-size: 20px!important;
+  }
 }
 
 /* =================================================
