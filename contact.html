@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Laureneties</title>
+
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Droid+Serif" />
+    <link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Character Set Encoding -->
+    <meta charset="utf-8">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <script>
+      var $ = jQuery.noConflict();
+      function myFunction() {
+          var popup = document.getElementById("myPopup");
+          popup.classList.toggle("show");
+      }
+      $(document).ready(function(){
+        $("#header").load("nav.html");
+        $(".main-content").hide().fadeIn(1000);
+      });
+    </script>
+
+  </head>
+  <span id="header"></span>
+  <body>
+    <span class="lauren-font">
+      <div class="row pink contained">
+        <div class="container main-content contact">
+          <center>
+            <h1 style="font-size:45px; padding-top: 30px;">CONTACT</h1>
+            <hr>
+          </center>
+          <div class="col-md-4 col-xs-4">
+            <center>
+              <a href="mailto:laurenities@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+            </center>
+          </div>
+          <div class="col-md-4 col-xs-4">
+            <center>
+              <a href="https://twitter.com/laurenities" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </center>
+          </div>
+          <div class="col-md-4 col-xs-4">
+            <center>
+              <div class="popup" onclick="myFunction()">
+                <img src="images\Discord_logo.png" alt="discord logo">
+                 <span class="popuptext" id="myPopup">Discord: lauren™#2931</span>
+              </div>
+            </center>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="container well container-contact main-content">
+        <form action="todo add laurens email" method="POST"> <!-- TODO: Add Email -->
+          <div class="row">
+            <div class="col-md-6">
+              <label for="fname">First Name</label><br>
+              <input type="text" id="fname" name="First Name" placeholder="Your name.." required>
+            </div>
+            <div class="col-md-6">
+              <label for="lname">Last Name</label><br>
+              <input type="text" id="lname" name="Last Name" placeholder="Your last name.." required>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <label for="phone">Twitter Handle/Twitch Username</label><br>
+              <input type="text" id="text" name="Twitter/Username" placeholder="Twitter Handle/Twitch Username..">
+            </div>
+            <div class="col-md-6">
+              <label for="phone">Email</label><br>
+              <input type="text" id="email" name="_replyto" placeholder="Email.." required>
+            </div>
+          </div>
+
+          <label for="Reason">Reason for Contact</label>
+          <select id="reason" name="_subject">
+            <option value="service request">Emote Design</option>
+            <option value="inquiry">Avatar Design</option>
+            <option value="lounge comment">Both</option>
+            <option value="other">Other</option>
+          </select>
+
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="Subject" placeholder="Write something.." style="height:100px" required></textarea>
+          <input type="submit" value="Submit">
+
+        </form>
+      </div>
+      <hr>
+      <br>
+    </span>
+  </body>
+</html>

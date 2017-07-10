@@ -1,0 +1,243 @@
+.row.pink {
+  background-color: #e7c4c7;
+	height: 300px;
+}
+.row.contained {
+	margin-left: 0;
+	margin-right: 0;
+}
+.lauren-font h1 {
+	font-family: "Droid Serif";
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.4px;
+	padding-bottom: 20px;
+}
+.lauren-font h3 {
+	font-family: "Droid Serif";
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 15.4px;
+	padding-bottom: 10px;
+}
+.lauren-font h2 {
+	font-family: "Droid Serif";
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	padding-bottom: 10px;
+}
+.lauren-font p {
+	font-family: 'Quattrocento Sans', sans-serif;
+}
+.lauren-font a {
+	font-family: 'Quattrocento Sans', sans-serif;
+}
+.lauren-font blockquote {
+	font-family: "Droid Serif";
+	font-size: 21px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 30px;
+}
+.lauren-font pre {
+	font-family: "Droid Serif";
+	font-size: 13px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 18.5714px;
+}
+.space {
+	padding: 35px;
+}
+/* =================================================
+                NAV STYLE
+================================================== */
+
+#logo-main {
+    display: block;
+    margin: 20px auto;
+}
+
+#navbar-primary {
+  background: transparent;
+  border: none;
+}
+#navbar-primary li a {
+  color: grey;
+}
+@media (min-width: 767px) {
+	.navbar-nav > a {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	#navbar-collapse{
+		text-align: center;
+		float: none;
+	}
+	#navbar-collapse ul {
+		display: inline-table;
+		margin: 0;
+		padding: 0;
+		float: none;
+	}
+	#navbar-collapse li {
+		float: left;
+		display: inline;
+		padding: 2px 5px;
+	}
+}
+#navbar-primary li a:hover,
+#navbar-primary li a:focus,
+#navbar-primary li a.active{
+    background: #e7c4c7;
+    color: black;
+}
+.navbar-header .icon-bar {
+  background-color: grey;
+}
+.navbar-header button {
+  border: 1px solid grey;
+}
+
+/* =================================================
+                Avatars STYLE
+================================================== */
+.avatars.images.chibi img {
+	width: 100%;
+	height: 350px;
+	padding-bottom: 20px;
+}
+.avatars.images.detailed img {
+	width: 100%;
+	height: 500px;
+	padding-bottom: 20px;
+}
+@media (min-width: 767px) {
+	.padded-left {
+		padding-left: 80px;
+	}
+}
+/* =================================================
+                EMOTES STYLE
+================================================== */
+@media (min-width: 767px) {
+	.emotes.images img {
+		width: 615px;
+	}
+}
+@media (max-width: 766px) {
+	.emotes.images img {
+		width: 100%
+	}
+}
+
+/* =================================================
+                contact STYLE
+================================================== */
+@media (min-width:767px) {
+	.contact .fa {
+		color: white;
+		font-size: 10rem;
+	}
+	.contact .popup img {
+		width: 100px;
+	}
+}
+@media (max-width:766px) {
+	.contact .fa {
+		color: white;
+		font-size: 5rem;
+	}
+	.contact .popup img {
+		width: 50px;
+	}
+}
+/* Popup container - can be anything you want */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: -35%;
+    left: 50%;
+    margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: -27%;
+    left: 50%;
+		transform: rotate(180deg);
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 8px; /* Some padding */
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 4px; /* Add a top margin */
+    margin-bottom: 10px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+input[type=text]:focus, select:focus, textarea:focus {
+    border: 1px solid #c0888c;
+}
+.container-contact input[type=submit] {
+    background-color: #e7c4c7;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.container.container-contact {
+	width: 50%;
+}
+.container.container-contact input[type=submit]:hover {
+    background-color: #c0888c;
+}
